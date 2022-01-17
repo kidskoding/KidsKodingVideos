@@ -5,7 +5,7 @@ class Spongebob {
     }
 }
 class Patrick extends Spongebob {
-	@Override
+    @Override
     void nickelodeonShows() {
         System.out.println("Loud House");
     }
