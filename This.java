@@ -1,7 +1,7 @@
 package KidsKodingVideos;
 public class This {
-    public int x = 3;
-    public int y = 5;
+    private int x = 3;
+    private int y = 5;
 
     public This(int x, int y) {
         this.x = x;
