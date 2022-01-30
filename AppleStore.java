@@ -1,10 +1,19 @@
 package KidsKodingVideos;
 public class AppleStore {
-    public static void main(String[] args) {
-        V2 v = new V2();
-        System.out.println(v.iPhoneColor);
-    }
-}
-class V2 {
-    String iPhoneColor = "red";
+	private String phoneColor;
+	private String phoneSize;
+	private boolean phoneCall;
+	public static void main(String... args) { 
+		AppleStore a = new AppleStore("(PRODUCT) RED", "128GB");
+		System.out.println(a.isRinging(a.phoneCall));
+	}
+	public AppleStore(String phoneColor, String phoneSize) {
+		System.out.println(phoneColor);
+		System.out.println(phoneSize);
+	}
+	public boolean isRinging(boolean phoneCall) {
+		if(phoneCall)
+			return true;
+		return false;
+	}
 }
